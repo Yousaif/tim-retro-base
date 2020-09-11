@@ -32,3 +32,361 @@
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
+
+
+/*---------------------- Settings ----------------------*/
+
+/* font-family: 'Cardo', serif; */
+/* font-family: 'Bungee Shade', cursive; */
+
+:root
+{
+  --font-primaire:'Cardo', serif;
+  --font-secondaire:'Bungee Shade', cursive;
+
+
+  --couleur-primaire:#FFFFFF;
+  --couleur-secondaire:#000000;
+  --degrade-principal:linear-gradient(35.74deg, rgba(167, 2, 154, 0.7) -2.92%, rgba(167, 2, 154, 0) 106.13%);
+  --couleur-mauve: rgba(167, 2, 154, 0.7);
+  --couleur-ombre: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+/* LES VARIABLES CSS ICI */
+
+/*---------------------- Generic ----------------------*/
+
+/* Mettre la ligne universelle pour le box-sizing */
+
+html
+{
+  box-sizing: border-box;
+}
+
+*,*:before,*:after
+{
+  box-sizing: inherit;
+}
+
+.conteneur
+{
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+h1, h2
+{
+  margin: 0;
+}
+
+
+
+/*---------------------- Elements ----------------------*/
+
+body
+{
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+
+  line-height: 24px;
+  color: #000000;
+}
+
+h4
+{
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/*---------------------- Components ----------------------*/
+
+
+
+
+/*---------------------- Header ----------------------*/
+
+.header-principal h1
+{
+  font-family: var(--font-secondaire);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: var(--couleur-primaire);
+
+
+  /*border: 1px solid var(--couleur-blanc);*/
+}
+
+.header-principal
+{
+  background: var(--couleur-secondaire);
+  padding: 15px 0;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 5;
+
+
+}
+
+.header-principal .conteneur
+{
+
+
+
+
+
+
+}
+
+
+/*---------------------- Hero ----------------------*/
+
+.hero p, .hero a
+{
+  font-size: 24px;
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+
+}
+
+.hero h2
+{
+  font-family: var(--font-secondaire);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 96px;
+  /* identical to box height */
+
+
+  color: var(--couleur-primaire);
+
+}
+
+.hero a
+{
+  text-decoration: none;
+  color: var(--couleur-primaire);
+}
+
+.hero a:hover
+{
+  text-decoration: underline;
+  color: var(--couleur-mauve);
+}
+
+.hero
+{
+  height: 80vh;
+  background: var(--couleur-secondaire);
+  position: relative;
+}
+
+.hero video
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.hero .content
+{
+  height: 100%;
+  width: 100%;
+  color: var(--couleur-primaire);
+  background: var(--degrade-principal);
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::after
+{
+
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/*---------------------- Articles ----------------------*/
+
+.interet
+{
+  background-image: url("../images/bg-interet.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 40px;
+
+
+}
+
+.interet .conteneur
+{
+  max-width: 1140px;
+}
+
+.interet h3
+{
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  text-transform: uppercase;
+
+
+}
+
+.interet p
+{
+  text-align: center;
+  max-width: 1140px;
+  /*padding: 0 20px;*/
+
+}
+
+.carte p
+{
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.cartes
+{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+
+.carte
+{
+  /*margin: 183.5px 176px;*/
+  box-shadow: var(--couleur-ombre);
+  margin: 20px 0;
+  width: 30%;
+  padding: 20px;
+  background: var(--couleur-primaire);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carte img
+{
+  width: 140px;
+  height: 140px;
+
+
+
+}
+/*---------------------- Citation ----------------------*/
+
+.citation
+{
+  background-image: url("../images/bg-citation.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 152px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.citation h3
+{
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: uppercase;
+  margin: 5px 0 18px 0;
+
+
+  color: var(--couleur-primaire);
+}
+
+.citation p
+{
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--couleur-primaire);
+}
+
+.citation .conteneur
+{
+  margin: 0 150px;
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+
+/*---------------------- Footer ----------------------*/
+
+.footer-principal
+{
+  background: var(--couleur-secondaire);
+  left: 0;
+  padding: 30px 0;
+  top: 2004px;
+}
+
+.copyright
+{
+  font-family: var(--font-primaire);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--couleur-primaire);
+  display: flex;
+  justify-content: center;
+}
+
+.copyright a
+{
+  text-decoration: none;
+  color: var(--couleur-primaire);
+}
+
+/*---------------------- Utilities ----------------------*/
