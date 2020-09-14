@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+.hero
+{
+  height: 80vh;
+  background: var(--couleur-secondaire);
+  position: relative;
+
+  video
+  {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  .content
+  {
+    height: 100%;
+    width: 100%;
+    color: var(--couleur-primaire);
+    background: var(--degrade-principal);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &::after
+  {
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+  }
+
+  p, a
+  {
+    font-size: 24px;
+    font-family: var(--font-primaire);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: var(--couleur-primaire);
+  }
+
+  a:hover
+  {
+    text-decoration: underline;
+    color: var(--couleur-mauve);
+  }
+
+  h2
+  {
+    font-family: var(--font-secondaire);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 96px;
+    color: var(--couleur-primaire);
+
+  }
+}
+
+
+
+
+

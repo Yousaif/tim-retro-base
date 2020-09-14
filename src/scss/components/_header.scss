@@ -1,0 +1,24 @@
+
+
+.header-principal
+{
+  background: var(--couleur-secondaire);
+  padding: 15px 0;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 5;
+
+  h1
+  {
+    font-family: var(--font-secondaire);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--couleur-primaire);
+
+
+
+  }
+}
